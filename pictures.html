@@ -10,15 +10,50 @@
     background: url(images/fon_spitz.png); /* Цвет фона и путь к файлу */
    }
   </style>
+  <script type="text/javascript">
+    function setBigImage(foto) {
+      document.getElementById("bigimg").src = foto.src;
+    }
+  </script>
   </head>
   <body>
-    <h1>Фотографии наших любимых</h1>
-    <ul class="menu-main">:
+    
+    <ul class="menu-main">
       <li><a href="index.html">Главная страница</a></li>
       <li><a href="about-pet.html">Шпицики</a></li>
       <li><a href="" class="current">Фотографии</a></li>
       <li><a href="blog.html">Общение</a></li>
       <li><a href="about-us.html">О нас</a></li>
     </ul>
+    <h1>Фотографии наших любимых</h1>
+    <div>
+      <p style = 'text-align: center;'>
+        <img id = 'bigimg' src = 'images/gallery1.jpg' height = '500' alt = '' />
+      </p>
+      <table style = 'margin: 0 auto;' border = '1'>
+        <tr>
+          <td>
+            <img src = 'images/gallery1.jpg' width = '100' onclick = 'setBigImage(this)' alt = 'Изображение 1' />
+          </td>
+          <td>
+            <img src = 'images/gallery2.jpg' width = '100' onclick = 'setBigImage(this)' alt = 'Изображение 2' />
+          </td>
+          <td>
+            <img src = 'images/gallery3.jpg' width = '100' onclick = 'setBigImage(this)' alt = 'Изображение 3' />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src = 'images/gallery4.jpg' width = '100' onclick = 'setBigImage(this)' alt = 'Изображение 4' />
+          </td>
+          <td>
+            <img src = 'images/gallery5.webp' width = '100' onclick = 'setBigImage(this)' alt = 'Изображение 5' />
+          </td>
+          <td>
+            <img src = 'images/gallery6.jpg' width = '100' onclick = 'setBigImage(this)' alt = 'Изображение 6' />
+          </td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html> 
