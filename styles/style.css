@@ -64,7 +64,7 @@ h1 {
    }
 
 .string {
-  background: rgba(255, 196, 0, 0.336); /* Цвет фона под заголовком */
+  background: rgba(255, 255, 255, 0.678); /* Цвет фона под заголовком */
   color: black; /* Цвет текста */
   background-size: 50px 50px;
 }
